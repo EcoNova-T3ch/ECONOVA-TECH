@@ -24,6 +24,6 @@ Econova está dirigida principalmente a dueños, directivos, gerentes de producc
 - **Soluciones empresariales:** Destaca secciones destinadas a mostrar los productos o servicios que Econova ofrece para apoyar la transformación verde de las empresas.
 - **Casos de éxito y confianza:** Contempla espacios para compartir casos de éxito y testimonios que respalden la efectividad de las soluciones propuestas.
 - **Diseño moderno y responsivo:** La interfaz está diseñada con HTML5 y CSS para adaptarse a distintos dispositivos, manteniendo una experiencia clara, visual y profesional.
-
+asfdasdf
 ## Propósito
 Buscamos hacer que las herramientas de gestión ambiental sean accesibles para todos, permitiendo que las PyMEs incorporen la sostenibilidad en sus operaciones diarias de forma sencilla, asequible y con resultados concretos.
