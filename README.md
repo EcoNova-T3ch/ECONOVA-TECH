@@ -11,7 +11,7 @@ El sitio comunica el mensaje central de la marca: **“Lleva tu empresa a otro n
   
 ## Segmento Objetivo
 
-Econova está dirigida principalmente a dueños, directivos y equipos de pequeñas y medianas empresas que buscan:
+Econova está dirigida principalmente a dueños, directivos, gerentes de producción y equipos de pequeñas y medianas empresas que buscan:
 
 - Mejorar la eficiencia en el uso de sus recursos.
 - Implementar soluciones tecnológicas con un enfoque ecológico.
