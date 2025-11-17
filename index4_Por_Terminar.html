@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Econova - Logro Descargado</title>
+    <link rel="stylesheet" href="style_pantalla_logros.css" />
+  </head>
+  <body class="green-background-page">
+    <header class="header">
+      <div class="container nav achievement-nav">
+        <div class="logo">
+          <img
+            src="/public/assets/images/Imagen_Logo_Sin-Fondo.png"
+            class="logo-img"
+            alt="Logo EcoNova"
+          />
+          <span>ECONOVA</span>
+        </div>
+        <nav class="nav-links">
+          <a href="">Inicio</a>
+          <a href="">Reportes</a>
+          <a href="">Cumplimientos</a>
+          <a href="">Contacto</a>
+        </nav>
+        <div class="nav-actions empty-actions"></div>
+      </div>
+    </header>
+
+    <main class="achievement-main-content">
+      <div class="achievement-content-box-outer">
+        <div class="achievement-content-box">
+          <h1 class="achievement-title">Logro descargado</h1>
+
+          <section class="achievement-card inner-border">
+            <div class="card-header">
+              <img
+                src="public/assets/images/Imagen_hoja_sin_fondo.png"
+                alt="Hoja de sostenibilidad"
+                class="leaf-image"
+              />
+              <span class="card-title-text">SOSTENIBILIDAD</span>
+            </div>
+
+            <div class="card-body">
+              <div class="qr-code-section">
+                <img
+                  src="public/assets/images/Imagen_codigo_qr.png"
+                  alt="Código QR de verificación"
+                  class="qr-image"
+                />
+                <p class="verification-code">
+                  Código de verificación: <br />
+                  <strong>123 - 456</strong>
+                </p>
+              </div>
+
+              <div
+                class="progress-circle green-circle"
+                role="progressbar"
+                aria-valuenow="6"
+                aria-valuemax="6"
+              >
+                <span class="progress-value">6/6</span>
+                <span class="progress-label">MESES</span>
+              </div>
+            </div>
+          </section>
+
+          <div class="achievement-actions">
+            <button class="action-btn share-btn" aria-label="Compartir logro">
+              Compartir
+            </button>
+            <button class="action-btn open-btn" aria-label="Abrir certificado">
+              Abrir
+            </button>
+            <button
+              class="action-btn done-btn"
+              aria-label="Volver a la vista principal"
+            >
+              Hecho
+            </button>
+          </div>
+        </div>
+
+        <aside class="download-notification-outer" role="alert">
+          <i class="icon-check"></i>
+          <p>
+            <strong>Sostenibilidad certificado.pdf</strong> <br />
+            guardado en /storage/emulated/0/Download
+          </p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
