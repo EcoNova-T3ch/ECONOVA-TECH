@@ -19,8 +19,10 @@ Econova está dirigida principalmente a dueños, directivos, gerentes de producc
 
 Los 2 principales segmentos objetivos son:
 1. Dueños o gerentes de PyMEs
+   
    Son los responsables de la estrategia del negocio, las decisiones de inversión, y el cumplimiento de las obligaciones normativas (ej. Resolución Ministerial 123-2023-MINAM).
 2. Jefes o gerentes de Producción
+   
    Son los usuarios directos de la plataforma, responsables de registrar, monitorear, y optimizar los consumos de recursos en la línea de producción (agua, energía, residuos).
 
 ## Características Principales
