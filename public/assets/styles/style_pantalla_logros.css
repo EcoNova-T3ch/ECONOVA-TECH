@@ -1,275 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* --- GENERAL STYLES & TYPOGRAPHY --- */
 :root {
-    --color-primary: #5da631; 
-    --color-secondary: #7dc352; 
-    --color-text-light: white;
-    --color-text-dark: #000;
-    --color-gray: #555;
-    --color-border: #ccc;
-    --color-white: white;
-  }
-  
-  
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: transparent; 
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  
-  .header {
-    background-color: var(--color-secondary);
-    width: 100%;
-    padding: 10px 0;
-    border-bottom-left-radius: 10px;
-  }
-  
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 60px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-  }
-  
-  .logo-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .logo span {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--color-text-light);
-    letter-spacing: 1px;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 30px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: var(--color-text-light);
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px 0;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #d8ffd8;
-  }
-  
-  .nav-actions {
-    min-width: 120px;
-  }
-  
-  .achievement-nav .nav-actions {
-    visibility: hidden;
-  }
-  
+  --color-green-primary: #5da631; /* Verde principal para banners/fondos grandes [cite: 1607] */
+  --color-green-header: #6ea443; /* Verde Hoja Activa para contraste y fondo [cite: 1570, 1675] */
+  --color-green-dark: #294a38; /* Verde Pinar Profundo para texto estructural [cite: 1575] */
+  --color-white: #ffffff; /* Fondo de la tarjeta y texto [cite: 1576, 1607] */
+  --color-black: #000000; /* Texto principal [cite: 1607] */
+  --color-gray-border: #d0d5dd; /* Borde sutil */
+  --color-yellow-cta: #f3ed40; /* Amarillo para CTA (opcional) [cite: 1607] */
+  --font-poppins: "Poppins", sans-serif; /* Tipografía principal [cite: 1533] */
+}
 
-  body.green-background-page {
-    background-color: var(--color-secondary); 
-  }
-  
-  .achievement-main-content {
-    min-height: calc(100vh - 80px); 
-    padding: 30px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .achievement-content-box-outer {
-    background-color: var(--color-white); 
-    border: 15px solid var(--color-secondary); 
-    border-radius: 10px;
-    padding: 30px 40px;
-    max-width: 600px;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+body {
+  font-family: var(--font-poppins);
+  background-color: var(--color-white);
+}
 
-  .achievement-content-box {
-    background-color: transparent; 
-    border: none; 
-    padding: 0; 
-    box-shadow: none; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; 
-  }
-  
-  .achievement-title {
-    color: var(--color-primary);
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
+.green-background-page {
+  /* Fondo principal de la página, si no se ve en el mock-up, se aplica al body */
+  background-color: var(--color-green-primary);
+}
 
-  .achievement-card {
-    border: 1px solid var(--color-border); 
-    border-radius: 10px;
-    padding: 20px 30px;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
-  
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 
-  .achievement-card.inner-border {
-    border: 1px solid #ddd; 
-  }
-  
-  .leaf-image {
-    width: 28px; 
-    height: 28px;
-    object-fit: contain;
-  }
-  
+/* --- HEADER / NAVIGATION BAR STYLES --- */
+.header {
+  background-color: var(--color-green-header);
+  color: var(--color-white);
+  padding: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .icon-check {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    color: var(--color-secondary);
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .icon-check::before {
-    content: "✓";
-    line-height: 1;
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .qr-code-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .qr-image {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-  }
-  
-  .verification-code {
-    text-align: left;
-    font-size: 14px;
-    color: var(--color-gray);
-  }
-  
-  .verification-code strong {
-    color: var(--color-text-dark);
-    font-size: 16px;
-  }
-  
-  .progress-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-    padding: 5px;
-  }
-  
-  .progress-circle.green-circle {
-    background-color: var(--color-secondary); 
-    border: none; 
-    box-shadow: 0 0 0 4px var(--color-secondary); 
-  }
-  
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .green-circle .progress-value,
-  .green-circle .progress-label {
-    color: var(--color-text-light); 
-  }
-  
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
-  .achievement-actions {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .action-btn {
-    background-color: white;
-    color: var(--color-primary);
-    border: 1px solid var(--color-border);
-    padding: 8px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    flex-grow: 1;
-    min-width: 80px;
-    transition: background-color 0.2s;
-  }
-  
-  .action-btn:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .download-notification-outer {
-    background-color: var(--color-secondary);
-    color: var(--color-text-light);
-    padding: 10px 15px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 380px;
-    box-sizing: border-box;
-    margin-top: 20px;
-  }
-  
-  .download-notification-outer p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 1.3;
-  }
+.logo-img {
+  width: 32px; /* Ajusta según el tamaño de tu logo */
+  height: 32px;
+  margin-right: 8px;
+  /* Necesitarás un logo verde sobre blanco para que se vea bien en el header */
+}
+
+.nav-links a {
+  color: var(--color-white);
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.empty-actions {
+  /* Espacio reservado si no hay botones de Login/Signup en esta vista */
+  width: 80px;
+}
+
+/* --- MAIN CONTENT: ACHIEVEMENT DOWNLOADED VIEW --- */
+.achievement-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alineación arriba para mejor visualización */
+  min-height: calc(100vh - 64px); /* Espacio restante de la pantalla */
+  padding: 40px 16px;
+}
+
+.achievement-content-box-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px; /* Ancho típico para una vista móvil centrada */
+}
+
+.achievement-content-box {
+  background-color: var(--color-white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.achievement-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-black);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Achievement Card Styling (The Content) */
+.achievement-card {
+  border: 1px solid var(--color-gray-border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.leaf-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.card-title-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-green-dark);
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qr-code-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+.verification-code {
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--color-black);
+}
+
+/* Progress Circle Styling */
+.progress-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Tamaño del círculo */
+  height: 100px;
+  border-radius: 50%;
+  border: 6px solid #d9d9d9; /* Fondo del círculo */
+  position: relative;
+  font-weight: 600;
+  color: var(--color-green-dark);
+}
+
+.green-circle {
+  /* Simula el borde de progreso con un color sólido para simplificar */
+  border: 6px solid var(--color-green-header); /* Para simular el 100% */
+}
+
+.progress-value {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.progress-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Achievement Actions (Buttons) */
+.achievement-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.action-btn {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid var(--color-green-header);
+  border-radius: 6px;
+  background-color: var(--color-white);
+  color: var(--color-green-header);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.action-btn:hover {
+  background-color: rgba(94, 179, 76, 0.1);
+}
+
+/* DOWNLOAD NOTIFICATION BAR */
+.download-notification-outer {
+  background-color: var(--color-green-header);
+  color: var(--color-white);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.download-notification-outer p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.icon-check {
+  /* Placeholder para el ícono de check */
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  display: inline-block;
+  position: relative;
+}
+
+.icon-check::after {
+  /* Simula el ícono de check dentro del círculo blanco */
+  content: "✓";
+  color: var(--color-green-header);
+  font-size: 1.2rem;
+  position: absolute;
+  top: -5px;
+  left: 2px;
+}

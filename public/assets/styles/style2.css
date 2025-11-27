@@ -7,7 +7,7 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  background-color: #76b84f;
+  background-color: #5da631;
   color: #ffffff;
 }
 
@@ -28,14 +28,15 @@ a {
 }
 
 .header {
-  background-color: #6aad46;
-  padding: 18px 0;
+  background-color: #7dc352;
+  padding: 10px 0;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* alinea todo a la izquierda */
+  gap: 12px; /* reduce el espacio entre logo y nav-links */
 }
 
 .logo {
@@ -54,8 +55,9 @@ a {
 }
 
 .nav-links {
+  margin-left: auto; /* esto empuja nav-links hasta la derecha */
   display: flex;
-  gap: 32px;
+  gap: 16px;
   font-size: 15px;
 }
 
@@ -94,7 +96,7 @@ a {
 .hero {
   position: relative;
   padding: 40px 0 140px;
-  background-color: #76b84f;
+  background-color: #5da631;
   overflow: visible;
 }
 
@@ -186,7 +188,7 @@ a {
 .hero-image-wrapper {
   position: absolute;
   right: 20%; /* movida más a la derecha */
-  bottom: -290px; /* movida bastante más abajo */
+  bottom: -171px; /* movida bastante más abajo */
   z-index: 5;
 }
 
@@ -236,4 +238,24 @@ a {
   .form-card {
     max-width: 100%;
   }
+}
+/* Franja fija en la parte inferior */
+.bottom-stripe {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px; /* ajusta la altura a tu gusto */
+  background: linear-gradient(90deg, #7dc352 0%, #7dc352 100%); /* ejemplo */
+  z-index: 0; /* muy bajo para que quede detrás */
+  pointer-events: none; /* evita bloquear clicks en elementos encima */
+}
+
+/* Asegurar que el contenido principal esté por encima de la franja */
+/* Si ya tienes elementos posicionados con z-index, ajusta sus valores en lugar de esto. */
+.container,
+.header,
+.hero {
+  position: relative; /* necesario para que z-index funcione */
+  z-index: 1; /* superior a .bottom-stripe (0) */
 }
