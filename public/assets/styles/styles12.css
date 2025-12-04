@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #5da631;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garantiza que el cuerpo ocupe al menos toda la altura de la pantalla */
+}
+
+header {
+  background-color: #7dc352;
+  padding: 5px 20px; /* Ajuste del padding para un header más compacto */
+  display: flex;
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 50px; /* Establece una altura más adecuada para el header */
+}
+
+header .logo {
+  display: flex;
+  align-items: center; /* Centra verticalmente el logo y el texto */
+  gap: 10px; /* Espacio entre el logo y el texto */
+}
+header a {
+  text-decoration: none; /* Eliminar el subrayado de los enlaces */
+}
+header .logo img {
+  width: 60px; /* Tamaño adecuado del logo */
+  height: 60px;
+  border-radius: 50%;
+}
+
+header .Logo-Texto {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none; /* Elimina el subrayado del texto "ECONOVA" */
+}
+
+/* Estilos principales */
+main {
+  padding: 40px 20px;
+  flex-grow: 1; /* Permite que el contenido principal ocupe el espacio restante */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Estilos de alerta */
+.alerta-item {
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.alerta-item button {
+  background-color: #3f7c2f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.alerta-item button:hover {
+  background-color: #66a44f;
+}
+
+/* Estilo para los detalles del ticket (inicialmente ocultos) */
+.ticket-evidencia {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.ticket-evidencia ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ticket-evidencia li {
+  margin-bottom: 10px;
+}
+
+/* Estilos del footer fijo */
+footer {
+  background-color: #7dc352;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0; /* Fija el footer en la parte inferior */
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}

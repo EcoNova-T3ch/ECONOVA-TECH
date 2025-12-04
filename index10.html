@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Interactiva - EcoNova</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/assets/styles/styles10.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index7.html">
+          <img
+            src="public/assets/images/Imagen_Logo_Sin-Fondo.png"
+            class="logo-img"
+            alt="Logo EcoNova"
+          />
+        </a>
+        <a href="index7.html"><span class="Logo-Texto">ECONOVA</span></a>
+      </div>
+    </header>
+
+    <main class="demo-interactiva-main">
+      <!-- Introducción -->
+      <section class="intro-demo">
+        <h1>Bienvenido a la Demo Interactiva de EcoNova</h1>
+        <p>
+          Esta es una simulación de cómo EcoNova puede ayudarte a optimizar el
+          consumo de recursos en tu PyME. Explora las funcionalidades a
+          continuación para ver cómo funciona la plataforma en tiempo real.
+        </p>
+      </section>
+
+      <!-- Sección de funcionalidades principales -->
+      <section class="funcionalidades-demo">
+        <h2>Funciones Principales</h2>
+
+        <!-- Ejemplo de función 1: Monitoreo de consumo -->
+        <div class="funcion-item">
+          <h3>Monitoreo de Consumo</h3>
+          <p>
+            Visualiza en tiempo real el consumo de energía y agua de tu PyME.
+          </p>
+          <div class="grafico-demo">
+            <!-- Aquí podrías insertar un gráfico o un placeholder para la demo -->
+            <img
+              src="public/assets/images/grafico-demo.png"
+              alt="Gráfico de Consumo"
+            />
+          </div>
+        </div>
+
+        <!-- Ejemplo de función 2: Reportes automáticos -->
+        <div class="funcion-item">
+          <h3>Generación de Reportes</h3>
+          <p>
+            Obtén reportes automáticos con recomendaciones para reducir costos.
+          </p>
+          <!-- Enlace en lugar de botón -->
+          <a
+            href="index9.html"
+            class="btn-generar-reporte"
+            id="generar-reporte-enlace"
+          >
+            Generar Reporte
+          </a>
+
+          <div id="reporte-simulado" style="display: none; margin-top: 20px">
+            <h4>Reporte de Consumo - Q1 2025</h4>
+            <p><strong>Ahorro Estimado:</strong> S/ 5,000</p>
+            <p><strong>Riesgos:</strong> Sobrecostos por fugas de agua</p>
+            <p>
+              <strong>Recomendación:</strong> Implementar medidas de control en
+              el consumo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ejemplo de función 3: Alertas por Umbral -->
+        <div class="funcion-item">
+          <h3>Alertas por Umbral</h3>
+          <p>Recibe alertas si el consumo supera el límite establecido.</p>
+          <a href="index12.html" class="btn-alerta" id="btn-ver-alerta">
+            Ver Alerta
+          </a>
+          <div id="alerta-simulada" style="display: none; margin-top: 20px">
+            <p>
+              🔔 <strong>Alerta:</strong> El consumo de energía ha superado el
+              umbral establecido.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cierre-turno">
+        <h2>Cierre de Turno</h2>
+        <p>
+          Haz clic en el siguiente botón para cerrar el turno y generar el
+          reporte correspondiente.
+        </p>
+
+        <!-- Botón que redirige a la página de cierre de turno -->
+        <a href="index8.html" class="btn-cierre-turno">Cerrar Turno</a>
+        <!-- Redirige a otra página -->
+      </section>
+      <!-- Sección de contacto o llamada a la acción -->
+      <!-- Sección de Cierre de Turno -->
+    </main>
+
+    <footer>
+      <p>&copy; 2025 EcoNova. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Agregar el archivo JS -->
+    <script src="public/assets/js/demo-interactiva.js"></script>
+  </body>
+</html>

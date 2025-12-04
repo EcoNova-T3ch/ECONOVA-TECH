@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alertas por Umbral - EcoNova</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/assets/styles/styles12.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index10.html">
+          <img
+            src="public/assets/images/Imagen_Logo_Sin-Fondo.png"
+            class="logo-img"
+            alt="Logo EcoNova"
+          />
+        </a>
+        <a href="index10.html"><span class="Logo-Texto">ECONOVA</span></a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="alertas-por-umbral-main">
+      <h1>Alertas por Umbral</h1>
+      <p>
+        Recibe notificaciones cuando el consumo de recursos (energía/agua)
+        supere el límite establecido.
+      </p>
+
+      <!-- Sección de alerta activa -->
+      <section class="alerta-item">
+        <h2>🔔 Alerta: Consumo Superado</h2>
+        <p>
+          El consumo de energía ha superado el umbral establecido. Verifica los
+          equipos en funcionamiento.
+        </p>
+        <p><strong>Fecha de la alerta:</strong> 01/04/2025</p>
+        <button class="btn-crear-ticket" id="btn-crear-ticket">
+          Crear Ticket
+        </button>
+
+        <!-- Detalles del ticket (inicialmente ocultos) -->
+        <div
+          class="ticket-evidencia"
+          id="ticket-evidencia"
+          style="display: none"
+        >
+          <h3>Detalles del Ticket:</h3>
+          <ul>
+            <li><strong>Responsable:</strong> Juan Pérez</li>
+            <li><strong>Fecha de apertura:</strong> 01/04/2025</li>
+            <li><strong>Estado:</strong> Abierto</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Sección de más alertas (si las hubiera) -->
+      <section class="alerta-item">
+        <h2>🔔 Alerta: Fuga de Agua Detectada</h2>
+        <p>Se detectó una posible fuga de agua en el área de producción.</p>
+        <p><strong>Fecha de la alerta:</strong> 02/04/2025</p>
+        <button class="btn-crear-ticket" id="btn-crear-ticket2">
+          Crear Ticket
+        </button>
+        <!-- Detalles del ticket (inicialmente ocultos) -->
+        <div
+          class="alerta-evidencia"
+          id="alerta-evidencia"
+          style="display: none"
+        >
+          <h3>Detalles de la Alerta:</h3>
+          <ul>
+            <li><strong>Fecha:</strong> 01/04/2025</li>
+            <li>
+              <strong>Descripción:</strong> El consumo de energía ha superado el
+              umbral.
+            </li>
+            <li>
+              <strong>Acción recomendada:</strong> Revisar los equipos en
+              funcionamiento.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 EcoNova. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Agregar el archivo JS -->
+    <script src="alertas-por-umbral.js"></script>
+  </body>
+</html>

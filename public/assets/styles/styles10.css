@@ -1,0 +1,200 @@
+/* Estilos generales */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #5da631;
+  color: white;
+  margin: 0;
+}
+
+.header {
+  background-color: #7dc352;
+  padding: 15px 20px; /* Ajuste de padding para el header */
+  display: flex;
+
+  align-items: center; /* Alinea el contenido verticalmente */
+  height: 30px; /* Altura adecuada para el header */
+}
+
+header .logo {
+  display: flex;
+  align-items: center; /* Alineación vertical para logo y texto */
+  gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+header .logo img {
+  width: 60px; /* Tamaño adecuado del logo */
+  height: 60px;
+  border-radius: 50%;
+}
+
+header .Logo-Texto {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none; /* Elimina el subrayado del texto */
+}
+
+/* Eliminar subrayado de los enlaces */
+a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilos principales */
+main {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.intro-demo p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.funcionalidades-demo {
+  margin-top: 40px;
+}
+
+.funcion-item {
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.funcion-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.funcion-item p {
+  font-size: 16px;
+}
+
+.grafico-demo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-generar-reporte,
+.btn-alerta {
+  background-color: #3f7c2f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-generar-reporte:hover,
+.btn-alerta:hover {
+  background-color: #66a44f;
+}
+
+#reporte-simulado,
+#alerta-simulada {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Sección de llamada a la acción */
+.cta-demo {
+  background-color: #f7df54;
+  color: #333;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.cta-demo h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-demo p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.cta-demo .btn-cta-demo {
+  background-color: #3f7c2f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-demo .btn-cta-demo:hover {
+  background-color: #66a44f;
+}
+
+/* Estilo para el enlace que funciona como botón */
+.btn-generar-reporte {
+  background-color: #3f7c2f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none; /* Para eliminar el subrayado en el enlace */
+  display: inline-block;
+}
+
+.btn-generar-reporte:hover {
+  background-color: #66a44f;
+}
+/* Estilos para la sección de Cierre de Turno */
+.cierre-turno {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cierre-turno h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.cierre-turno p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cierre-turno .btn-cierre-turno {
+  background-color: #3f7c2f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /* Eliminar subrayado en el enlace */
+  transition: background-color 0.3s;
+}
+
+.cierre-turno .btn-cierre-turno:hover {
+  background-color: #66a44f;
+}
