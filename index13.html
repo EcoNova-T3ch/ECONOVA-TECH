@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funciones avanzadas - EcoNova</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/assets/styles/styles13.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index8.html">
+          <img
+            src="public/assets/images/Imagen_Logo_Sin-Fondo.png"
+            alt="Logo EcoNova"
+            class="logo-img"
+          />
+        </a>
+        <a href="index8.html" class="logo-texto">ECONOVA</a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="funciones-main">
+      <section class="intro-funciones">
+        <h1>Panel de funciones avanzadas</h1>
+        <p>
+          Aquí puedes explorar más funciones de EcoNova y ver cómo se integran
+          en la gestión diaria de energía y agua de tu empresa.
+        </p>
+      </section>
+
+      <!-- Panel resumen -->
+      <section class="panel-avanzado">
+        <h2>Resumen de consumo y operaciones</h2>
+        <p>
+          Este panel muestra un ejemplo de cómo EcoNova puede resumir el estado
+          general del sistema: consumos, alertas y accesos rápidos a módulos
+          clave.
+        </p>
+
+        <!-- Filtros -->
+        <div class="panel-filtros">
+          <div class="filtro-item">
+            <label for="filtro-recurso">Recurso:</label>
+            <select id="filtro-recurso">
+              <option>Energía (kWh)</option>
+              <option>Agua (m³)</option>
+            </select>
+          </div>
+
+          <div class="filtro-item">
+            <label for="filtro-fecha">Rango de fechas:</label>
+            <select id="filtro-fecha">
+              <option>Hoy</option>
+              <option>Últimos 7 días</option>
+              <option>Últimos 30 días</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- KPIs -->
+        <div class="panel-kpis">
+          <div class="kpi-card">
+            <span class="kpi-label">Consumo total hoy</span>
+            <span class="kpi-value">1 250 kWh</span>
+            <span class="kpi-note">vs ayer: +5%</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-label">Consumo de agua</span>
+            <span class="kpi-value">89 m³</span>
+            <span class="kpi-note">Dentro del rango esperado</span>
+          </div>
+          <div class="kpi-card alerta">
+            <span class="kpi-label">Alertas activas</span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-note">Revisar líneas críticas</span>
+          </div>
+        </div>
+
+        <!-- Tabla resumen -->
+        <div class="panel-tabla">
+          <h3>Consumo por línea de producción</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Línea</th>
+                <th>Turno</th>
+                <th>Consumo</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Línea 1 - Envasado</td>
+                <td>Mañana</td>
+                <td>420 kWh</td>
+                <td>Normal</td>
+                <td>
+                  <a href="index8.html" class="link-accion"
+                    >Ir a cierre de turno</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Línea 2 - Molido</td>
+                <td>Tarde</td>
+                <td>510 kWh</td>
+                <td>Alerta</td>
+                <td>
+                  <a href="index12.html" class="link-accion">Ver alertas</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Línea 3 - Lavado</td>
+                <td>Noche</td>
+                <td>320 kWh</td>
+                <td>Normal</td>
+                <td>
+                  <a href="index9.html" class="link-accion">Ver reporte</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Sección para más funciones -->
+      <section class="otras-funciones">
+        <h2>Otras funciones de EcoNova</h2>
+        <p>
+          Estas secciones están pensadas para mostrar módulos adicionales o
+          futuras capacidades de la plataforma.
+        </p>
+
+        <div class="otras-funciones-grid">
+          <article class="funcion-card">
+            <h3>Gestión de reportes</h3>
+            <p>
+              Accede a una sección donde se simula la generación y descarga de
+              reportes en PDF para auditorías y cumplimiento.
+            </p>
+            <a href="index9.html" class="btn-funcion">
+              Ver sección de reportes
+            </a>
+          </article>
+
+          <article class="funcion-card">
+            <h3>Alertas y seguimiento</h3>
+            <p>
+              Visualiza alertas por umbral y ejemplos de tickets creados para
+              dar seguimiento a incidencias.
+            </p>
+            <a href="index12.html" class="btn-funcion">
+              Ver alertas y tickets
+            </a>
+          </article>
+
+          <article class="funcion-card funcion-futura">
+            <h3>Próxima función 1</h3>
+            <p>
+              Espacio reservado para una futura mejora, por ejemplo: análisis
+              comparativo entre sedes o recomendaciones automáticas.
+            </p>
+            <span class="tag-proximamente">Próximamente</span>
+          </article>
+
+          <article class="funcion-card funcion-futura">
+            <h3>Próxima función 2</h3>
+            <p>
+              Sección pensada para mostrar la evolución del producto en
+              versiones futuras de EcoNova.
+            </p>
+            <span class="tag-proximamente">Próximamente</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 EcoNova. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

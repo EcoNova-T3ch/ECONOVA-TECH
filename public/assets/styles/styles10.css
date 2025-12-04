@@ -198,3 +198,70 @@ h1 {
 .cierre-turno .btn-cierre-turno:hover {
   background-color: #66a44f;
 }
+.mas-funciones {
+  background-color: #ffffff;
+  color: #333;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mas-funciones h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mas-funciones p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mas-funciones-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.funcion-extra-card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.funcion-extra-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.funcion-extra-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.btn-mas-funciones {
+  display: inline-block;
+  background-color: #3f7c2f;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-mas-funciones:hover {
+  background-color: #66a44f;
+}
+
+/* En pantallas más grandes, usa dos columnas */
+@media (min-width: 768px) {
+  .mas-funciones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

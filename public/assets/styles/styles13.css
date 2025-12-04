@@ -1,0 +1,262 @@
+/* Layout general */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #5da631;
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background-color: #7dc352;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.logo-texto {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-decoration: none; /* sin subrayado */
+}
+
+/* Main */
+.funciones-main {
+  flex: 1;
+  padding: 40px 20px 60px;
+}
+
+.intro-funciones h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.intro-funciones p {
+  font-size: 16px;
+  max-width: 700px;
+}
+
+/* PANEL AVANZADO */
+.panel-avanzado {
+  background-color: #ffffff;
+  color: #333333;
+  margin-top: 30px;
+  padding: 24px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.panel-avanzado h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.panel-avanzado p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Filtros */
+.panel-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.filtro-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.filtro-item label {
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.filtro-item select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+}
+
+/* KPIs */
+.panel-kpis {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.kpi-card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.kpi-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666666;
+}
+
+.kpi-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: #3f7c2f;
+}
+
+.kpi-note {
+  font-size: 12px;
+  color: #777777;
+}
+
+.kpi-card.alerta .kpi-value {
+  color: #d9534f; /* rojo para alertas */
+}
+
+/* Tabla resumen */
+.panel-tabla h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.panel-tabla table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.panel-tabla th,
+.panel-tabla td {
+  border: 1px solid #dddddd;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.panel-tabla th {
+  background-color: #f0f0f0;
+  font-weight: 700;
+}
+
+.link-accion {
+  color: #3f7c2f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-accion:hover {
+  text-decoration: underline;
+}
+
+/* OTRAS FUNCIONES */
+.otras-funciones {
+  margin-top: 40px;
+}
+
+.otras-funciones h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.otras-funciones p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.otras-funciones-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.funcion-card {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.funcion-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.funcion-card p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.btn-funcion {
+  display: inline-block;
+  background-color: #3f7c2f;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-funcion:hover {
+  background-color: #66a44f;
+}
+
+.funcion-futura {
+  border: 1px dashed #cccccc;
+}
+
+.tag-proximamente {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #777777;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .panel-kpis {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .otras-funciones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #7dc352;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
