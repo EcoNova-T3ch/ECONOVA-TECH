@@ -1,0 +1,130 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #7dc352;
+  padding: 30px; /* Reducido aún más el padding para un header más compacto */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Alinea el contenido verticalmente */
+  height: 50px; /* Controla la altura del header */
+}
+.logo img {
+  max-width: 70px; /* Tamaño reducido del logo */
+  height: auto;
+}
+
+/* Otras secciones siguen igual */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  color: #333;
+  background-color: #5da631;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  max-width: 60%;
+}
+
+.about h1 {
+  color: f4f4f4;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  font-weight: 600;
+  color: f4f4f4;
+}
+
+.about p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 525px;
+  align-self: center; /* Mantener la alineación vertical */
+  margin-left: -500px; /* Mueve la imagen 20 píxeles hacia la izquierda */
+  margin-top: -50px; /* Mueve la imagen 10 píxeles hacia arriba */
+}
+.brand-name {
+  font-size: 1.75rem; /* Tamaño del texto del nombre */
+  font-weight: bold;
+  color: white; /* Color blanco */
+  margin-left: 10px; /* Espacio entre el logo y el nombre */
+}
+.brand-name a {
+  text-decoration: none;
+  color: white; /* Color blanco para el texto */
+  font-family: "Arial", sans-serif;
+}
+footer {
+  background-color: #7dc352;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media Queries para hacer la página más responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about h1 {
+    font-size: 2.2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about-image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h1 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 5px 0;
+  }
+}

@@ -143,6 +143,8 @@ a {
   width: 100%;
   max-width: 340px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  pointer-events: auto; /* Asegura que el formulario se pueda interactuar */
+  z-index: 1; /* Asegura que el formulario esté por encima */
 }
 
 .form-card h2 {
@@ -168,8 +170,9 @@ a {
   background-color: #e5f2dd;
   font-size: 14px;
   color: #244020;
+  z-index: 2; /* Asegura que el input esté encima si hay otros elementos */
+  position: relative; /* Necesario para que z-index funcione */
 }
-
 .form-input::placeholder {
   color: #5e7d57;
 }
@@ -185,8 +188,13 @@ a {
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  pointer-events: auto; /* Asegura que el formulario se pueda interactuar */
+  z-index: 1; /* Asegura que el formulario esté por encima */
 }
-
+.hero-image-wrapper {
+  z-index: 1; /* Asegúrate de que la imagen esté debajo del formulario */
+  pointer-events: none; /* Evita que los clics se intercepten por la imagen */
+}
 .hero-image-wrapper {
   position: absolute;
   right: 20%; /* movida más a la derecha */

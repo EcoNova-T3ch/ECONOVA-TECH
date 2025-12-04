@@ -1,0 +1,139 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #5da631;
+  color: white;
+}
+
+/* Header */
+.header {
+  background-color: #7dc352;
+  padding: 30px; /* Reducido aún más el padding para un header más compacto */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Alinea el contenido verticalmente */
+  height: 50px; /* Controla la altura del header */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.logo-img {
+  max-width: 70px; /* Tamaño reducido del logo */
+
+  object-fit: cover;
+}
+
+/* Estilo principal de la página de inicio de sesión */
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px); /* Resto la altura del header */
+}
+/* Estilo para el logo y el texto "ECONOVA" */
+/* Estilo para el logo y el texto "ECONOVA" */
+.logo span {
+  font-size: 28px;
+  font-weight: 800;
+  color: white; /* Cambié el color a amarillo dorado, puedes cambiarlo */
+  letter-spacing: 1px;
+}
+
+/* Eliminar la línea inferior en el enlace */
+.logo a {
+  text-decoration: none; /* Quita la línea debajo del enlace */
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+}
+
+.login-form p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #e5f2dd;
+  color: #244020;
+}
+
+.form-submit {
+  width: 100%;
+  background-color: #3f7c2f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-submit:hover {
+  background-color: #66a44f;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #3f7c2f;
+  text-decoration: none;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 640px) {
+  .login-container {
+    width: 90%;
+  }
+
+  .login-form h1 {
+    font-size: 1.8rem;
+  }
+
+  .login-form p {
+    font-size: 14px;
+  }
+}
