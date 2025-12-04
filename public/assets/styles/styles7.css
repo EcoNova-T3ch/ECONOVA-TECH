@@ -172,11 +172,18 @@ body {
   font-size: 16px;
   transition: background-color 0.3s;
 }
-
-.btn-cta:hover {
-  background-color: #e9c849;
+/* Estilo para el botón del Cierre de Turno */
+.btn-turno {
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
-
 .cta-note {
   font-size: 12px;
   margin-top: 10px;

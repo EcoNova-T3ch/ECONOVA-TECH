@@ -1,0 +1,260 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #5da631;
+  color: white;
+}
+
+/* Header */
+.header {
+  background-color: #7dc352;
+  padding: 30px; /* Reducido aún más el padding para un header más compacto */
+  display: flex;
+  height: 50px; /* Controla la altura del header */
+}
+.ticket-evidencia {
+  color: #444; /* Cambia el color de todo el texto dentro de la sección de ticket */
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+header .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+/* Eliminar subrayado de los enlaces */
+a {
+  text-decoration: none;
+}
+
+header .Logo-Texto {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* Estilos principales */
+main {
+  padding: 40px 20px;
+}
+
+h1,
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+form {
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form .form-group label {
+  font-weight: bold;
+}
+
+form .form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #e5f2dd;
+  color: #244020;
+}
+
+form .btn-cerrar-turno {
+  background-color: #3f7c2f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form .btn-cerrar-turno:hover {
+  background-color: #66a44f;
+}
+
+/* Mensajes de éxito y error */
+#mensaje-error,
+#mensaje-exito {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#mensaje-error {
+  color: red;
+}
+
+#mensaje-exito {
+  color: green;
+}
+
+#descargar-reporte {
+  color: #f7df54;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#descargar-reporte:hover {
+  color: #e9c849;
+}
+
+/* Sección Historial de Cierre */
+.cierre-historial {
+  margin-top: 30px;
+}
+
+.cierre-historial a {
+  color: #f7df54;
+  font-weight: bold;
+}
+
+/* Sección Alertas por Umbral */
+.alertas-por-umbral {
+  margin-top: 50px;
+}
+
+.alerta-item {
+  margin-bottom: 20px;
+}
+
+.btn-crear-ticket {
+  background-color: #f7df54;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-crear-ticket:hover {
+  background-color: #e9c849;
+}
+
+/* Detalles del ticket */
+.ticket-evidencia {
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.ticket-evidencia ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ticket-evidencia li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #7dc352;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+/* Estilo para el contenedor de los detalles del ticket */
+.ticket-evidencia {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.ticket-evidencia ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ticket-evidencia li {
+  margin-bottom: 10px;
+}
+
+.ticket-evidencia h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-crear-ticket {
+  background-color: #f7df54;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-crear-ticket:hover {
+  background-color: #e9c849;
+}
+/* Estilo para el botón de firmar */
+.btn-firmar-reporte {
+  background-color: #3f7c2f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-firmar-reporte:hover {
+  background-color: #66a44f;
+}
+
+/* Estilo para el mensaje de reporte firmado */
+#mensaje-reporte-firmado {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 768px) {
+  .cierre-turno,
+  .alertas-por-umbral {
+    padding: 20px;
+  }
+
+  form {
+    padding: 15px;
+  }
+}

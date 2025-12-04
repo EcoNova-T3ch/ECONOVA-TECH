@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generar Reporte Ejecutivo - EcoNova</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/assets/styles/styles9.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index7.html">
+          <img
+            src="public/assets/images/Imagen_Logo_Sin-Fondo.png"
+            class="logo-img"
+            alt="Logo EcoNova"
+          />
+        </a>
+        <a href="index7.html"><span class="Logo-Texto">ECONOVA</span></a>
+      </div>
+    </header>
+
+    <main class="generar-reporte">
+      <section class="formulario-reporte">
+        <h1>Generar Reporte Ejecutivo 1-página</h1>
+
+        <form id="form-reporte" action="#" method="POST">
+          <!-- Selección del trimestre -->
+          <div class="form-group">
+            <label for="trimestre">Seleccionar trimestre:</label>
+            <select id="trimestre" name="trimestre" required>
+              <option value="Q1">Primer Trimestre</option>
+              <option value="Q2">Segundo Trimestre</option>
+              <option value="Q3">Tercer Trimestre</option>
+              <option value="Q4">Cuarto Trimestre</option>
+            </select>
+          </div>
+
+          <!-- Ahorro en S/ -->
+          <div class="form-group">
+            <label for="ahorro">Ahorro (S/):</label>
+            <input
+              type="number"
+              id="ahorro"
+              name="ahorro"
+              placeholder="Introduce el ahorro en S/"
+              required
+            />
+          </div>
+
+          <!-- Top 3 iniciativas -->
+          <div class="form-group">
+            <label for="iniciativas">Top 3 iniciativas:</label>
+            <textarea
+              id="iniciativas"
+              name="iniciativas"
+              placeholder="Escribe las 3 iniciativas"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Riesgos -->
+          <div class="form-group">
+            <label for="riesgos">Riesgos:</label>
+            <textarea
+              id="riesgos"
+              name="riesgos"
+              placeholder="Escribe los riesgos"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Próximos pasos -->
+          <div class="form-group">
+            <label for="proximos-pasos">Próximos pasos:</label>
+            <textarea
+              id="proximos-pasos"
+              name="proximos-pasos"
+              placeholder="Escribe los próximos pasos"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Botón para generar reporte -->
+          <button
+            type="submit"
+            id="btn-generar-reporte"
+            class="btn-generar-reporte"
+          >
+            Generar Reporte
+          </button>
+        </form>
+      </section>
+
+      <!-- Sección de mensaje después de generar el reporte -->
+      <section id="mensaje-reporte-generado" style="display: none">
+        <h2>Reporte Generado</h2>
+        <p>
+          El reporte ejecutivo para el
+          <strong id="trimestre-seleccionado"></strong> ha sido generado con
+          éxito.
+        </p>
+        <a href="#" id="descargar-reporte" class="btn-descargar-reporte"
+          >Descargar Reporte PDF</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 EcoNova. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Agregar archivo JS -->
+    <script src="generar-reporte.js"></script>
+  </body>
+</html>
