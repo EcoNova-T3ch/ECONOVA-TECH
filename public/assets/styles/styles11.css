@@ -136,25 +136,71 @@ header .logo img {
   padding-inline: 18px;
 }
 
-/* Hero */
+/* HERO GENERAL */
 .hero {
+  position: relative;
   padding: 72px 0 72px;
-  min-height: calc(100vh - 72px); /* casi pantalla completa */
-  display: flex;
-  align-items: center;
 }
 
 .hero-inner {
   display: flex;
-  flex-direction: column; /* todo en columna */
   align-items: center;
-  text-align: center;
-  gap: 32px;
+  justify-content: space-between;
+  gap: 60px;
 }
 
-/* Columna izquierda */
+/* Texto alineado a la izquierda */
 .hero-copy {
-  max-width: 640px;
+  max-width: 560px;
+  text-align: left; /* CLAVE */
+}
+
+/* IMAGEN DERECHA */
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* centrado dentro de su columna */
+  align-items: center;
+}
+
+.hero-visual-img {
+  max-width: 420px; /* tamaño máximo del teléfono */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* RESPONSIVE: en móvil ponemos la imagen debajo del texto */
+@media (max-width: 900px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .hero-copy {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    justify-content: center;
+  }
+
+  .hero-visual-img {
+    max-width: 320px;
+  }
+}
+
+/* Aseguramos que todo lo dentro del hero-copy esté a la izquierda */
+.hero-copy *,
+.hero-footnote {
+  text-align: left;
+  margin-left: 0;
+}
+
+/* Opcional: si querías centrar solo los bullets antes, ahora quedan a la izquierda */
+.hero-benefits {
+  margin-left: 0;
 }
 
 /* centramos el contenido principal */

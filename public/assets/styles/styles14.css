@@ -1,0 +1,214 @@
+/* =========================
+   Variables y base
+   ========================= */
+:root {
+  --green-light: #7dc352; /* Header */
+  --green-main: #5da631;
+  --green-dark: #4a8c2e;
+  --yellow: #f7df54;
+  --bg-page: #f4f8f0;
+  --white: #ffffff;
+  --text-main: #1f2933;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+}
+
+/* =========================
+     Header
+     ========================= */
+.header {
+  background-color: var(--green-light);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* quitar subrayado del texto ECONOVA */
+.logo-text-link {
+  text-decoration: none;
+}
+
+.Logo-Texto {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+/* =========================
+     Main / Sección Próximas capacidades
+     ========================= */
+.proximas-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.proximas-capacidades {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 28px 22px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.proximas-capacidades h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--green-dark);
+}
+
+.proximas-capacidades .subtitulo {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 22px;
+}
+
+/* Grid de tarjetas */
+.cap-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+/* Tarjetas */
+.cap-card {
+  border-radius: 14px;
+  padding: 18px 16px 18px;
+  border: 1px solid #e5e7eb;
+  background: #fafdf7;
+}
+
+.cap-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #e5f6dd;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+
+.cap-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.cap-card .desc {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #4b5563;
+}
+
+.cap-card ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 13px;
+  color: #374151;
+}
+
+.cap-card ul li {
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.cap-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  color: var(--green-main);
+}
+
+/* Footer dentro del panel */
+.cap-footer {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px dashed #d1d5db;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.cap-footer-text {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+/* Botón “Ver demo actual” */
+.btn-ver-roadmap {
+  background-color: var(--green-main);
+  color: var(--white);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-ver-roadmap span {
+  font-size: 14px;
+}
+
+.btn-ver-roadmap:hover {
+  background-color: var(--green-dark);
+}
+
+/* =========================
+     Footer general
+     ========================= */
+.footer {
+  text-align: center;
+  padding: 16px 20px 20px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+/* =========================
+     Responsive
+     ========================= */
+@media (min-width: 768px) {
+  .proximas-capacidades h1 {
+    font-size: 28px;
+  }
+
+  .cap-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
