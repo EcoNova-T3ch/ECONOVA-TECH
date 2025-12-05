@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparador vs sector – EcoNova</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/assets/styles/style17.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index10.html">
+          <img
+            src="public/assets/images/Imagen_Logo_Sin-Fondo.png"
+            class="logo-img"
+            alt="Logo EcoNova"
+          />
+        </a>
+        <a href="index10.html"><span class="logo-text">ECONOVA</span></a>
+      </div>
+      <div class="header-title">
+        <h1>Comparador de desempeño vs sector</h1>
+        <span>HU_PyME_019</span>
+      </div>
+    </header>
+
+    <main class="cmp-main">
+      <!-- Filtros -->
+      <section class="cmp-filtros">
+        <div class="filtro-item">
+          <label>Sector</label>
+          <select>
+            <option>Alimentos y bebidas</option>
+            <option>Textil</option>
+            <option>Metal-mecánico</option>
+            <option>Servicios</option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label>Tamaño de empresa</label>
+          <select>
+            <option>PyME pequeña</option>
+            <option>PyME mediana</option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label>Recurso a comparar</label>
+          <select>
+            <option>Energía y agua</option>
+            <option>Solo energía</option>
+            <option>Solo agua</option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label>Periodo de análisis</label>
+          <select>
+            <option>Últimos 12 meses</option>
+            <option>Últimos 6 meses</option>
+            <option>Último trimestre</option>
+          </select>
+        </div>
+
+        <button class="btn-primario">Aplicar filtros</button>
+      </section>
+
+      <!-- KPIs comparativos -->
+      <section class="cmp-kpis">
+        <article class="kpi-card">
+          <h3>Consumo de energía por unidad producida</h3>
+          <p class="kpi-unidad">kWh / unidad</p>
+
+          <div class="kpi-comp">
+            <div>
+              <span class="kpi-label">Mi empresa</span>
+              <span class="kpi-valor">4.2</span>
+            </div>
+            <div>
+              <span class="kpi-label">Promedio sector</span>
+              <span class="kpi-valor kpi-valor-sector">5.1</span>
+            </div>
+          </div>
+
+          <span class="kpi-pill mejor"> 18% más eficiente que el sector </span>
+        </article>
+
+        <article class="kpi-card">
+          <h3>Consumo de agua por unidad producida</h3>
+          <p class="kpi-unidad">m³ / unidad</p>
+
+          <div class="kpi-comp">
+            <div>
+              <span class="kpi-label">Mi empresa</span>
+              <span class="kpi-valor">0.82</span>
+            </div>
+            <div>
+              <span class="kpi-label">Promedio sector</span>
+              <span class="kpi-valor kpi-valor-sector">0.70</span>
+            </div>
+          </div>
+
+          <span class="kpi-pill peor"> 17% por encima del sector </span>
+        </article>
+
+        <article class="kpi-card">
+          <h3>Costo energético sobre ventas</h3>
+          <p class="kpi-unidad">% de ventas</p>
+
+          <div class="kpi-comp">
+            <div>
+              <span class="kpi-label">Mi empresa</span>
+              <span class="kpi-valor">6.4%</span>
+            </div>
+            <div>
+              <span class="kpi-label">Promedio sector</span>
+              <span class="kpi-valor kpi-valor-sector">7.9%</span>
+            </div>
+          </div>
+
+          <span class="kpi-pill mejor"> Menor peso del costo energético </span>
+        </article>
+
+        <article class="kpi-card">
+          <h3>Posición relativa en el sector</h3>
+          <p class="kpi-unidad">Percentil</p>
+
+          <div class="kpi-comp">
+            <div>
+              <span class="kpi-label">Eficiencia energética</span>
+              <span class="kpi-valor">P75</span>
+            </div>
+            <div>
+              <span class="kpi-label">Eficiencia hídrica</span>
+              <span class="kpi-valor kpi-valor-sector">P40</span>
+            </div>
+          </div>
+
+          <span class="kpi-pill neutro">
+            Mejor en energía, oportunidad en agua
+          </span>
+        </article>
+      </section>
+
+      <!-- Gráficos de comparación -->
+      <section class="cmp-graficos">
+        <div class="grafico-card">
+          <div class="grafico-header">
+            <h3>Consumo mensual vs promedio del sector</h3>
+            <span class="grafico-subtitulo">
+              Comparación de consumo total (energía/agua) por mes
+            </span>
+          </div>
+          <div class="grafico-placeholder">
+            <span>Gráfico de líneas: Mi empresa vs sector (kWh / mes)</span>
+          </div>
+          <p class="grafico-nota">
+            Los meses de mayor desviación positiva indican oportunidades de
+            mejora frente al comportamiento del sector.
+          </p>
+        </div>
+
+        <div class="grafico-card">
+          <div class="grafico-header">
+            <h3>Costo por unidad producida vs sector</h3>
+            <span class="grafico-subtitulo">
+              Comparación de costo energético unitario en el periodo
+            </span>
+          </div>
+          <div class="grafico-placeholder">
+            <span
+              >Gráfico de barras: costo por unidad (S/) empresa vs sector</span
+            >
+          </div>
+          <p class="grafico-nota">
+            Permite identificar si el coste asociado a energía y agua es
+            competitivo frente a empresas similares.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tabla de indicadores -->
+      <section class="cmp-tabla">
+        <header class="cmp-tabla-header">
+          <h2>Indicadores detallados de desempeño</h2>
+          <p>
+            Revisa los principales indicadores comparados con el promedio del
+            sector y su desviación.
+          </p>
+        </header>
+
+        <div class="tabla-contenedor">
+          <table>
+            <thead>
+              <tr>
+                <th>Indicador</th>
+                <th>Unidad</th>
+                <th>Mi empresa</th>
+                <th>Promedio sector</th>
+                <th>Diferencia</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Consumo de energía por unidad producida</td>
+                <td>kWh / unidad</td>
+                <td>4.2</td>
+                <td>5.1</td>
+                <td>-18%</td>
+                <td>Mejor desempeño que el sector.</td>
+              </tr>
+              <tr>
+                <td>Consumo de agua por unidad producida</td>
+                <td>m³ / unidad</td>
+                <td>0.82</td>
+                <td>0.70</td>
+                <td>+17%</td>
+                <td>Requiere acciones de eficiencia hídrica.</td>
+              </tr>
+              <tr>
+                <td>Costo energético sobre ventas</td>
+                <td>%</td>
+                <td>6.4%</td>
+                <td>7.9%</td>
+                <td>-1.5 pp</td>
+                <td>Costo más bajo que el promedio.</td>
+              </tr>
+              <tr>
+                <td>Consumo específico de energía</td>
+                <td>kWh / tonelada</td>
+                <td>210</td>
+                <td>235</td>
+                <td>-11%</td>
+                <td>Eficiencia aceptable, mantener monitoreo.</td>
+              </tr>
+              <tr>
+                <td>Intensidad hídrica</td>
+                <td>m³ / tonelada</td>
+                <td>4.1</td>
+                <td>3.5</td>
+                <td>+17%</td>
+                <td>Priorizar iniciativas en agua.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Resumen / conclusiones -->
+      <section class="cmp-resumen">
+        <h2>Conclusiones del comparador</h2>
+        <p>
+          Este comparador permite al gerente saber rápidamente si su empresa
+          está por encima o por debajo del promedio del sector en consumo y
+          costos de recursos. Con esta información puede priorizar iniciativas
+          de eficiencia donde existe mayor brecha, especialmente en el uso de
+          agua.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 EcoNova. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

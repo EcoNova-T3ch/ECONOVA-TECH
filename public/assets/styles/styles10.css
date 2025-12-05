@@ -405,3 +405,142 @@ h1 {
     flex-direction: column;
   }
 }
+
+/* ===== Comparador de desempeño vs sector (HU_PyME_019) ===== */
+
+.comparador-demo {
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.comparador-demo h2 {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.comparador-demo p {
+  margin: 0;
+  color: #f3fdf3;
+  font-size: 0.95rem;
+}
+
+.comparador-card {
+  margin-top: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.comparador-info h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #2f5b22;
+  font-size: 1rem;
+}
+
+.comparador-info ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #444444;
+  font-size: 0.95rem;
+}
+
+.comparador-cta {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.comparador-cta p {
+  color: #444444;
+  margin: 0;
+}
+
+/* reutiliza el estilo del botón existente */
+.comparador-cta .btn-mas-funciones {
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .comparador-card {
+    flex-direction: column;
+  }
+}
+/* ===== Configuración de alertas personalizadas (HU_PyME_017) ===== */
+
+.alertas-demo {
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.alertas-demo h2 {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.alertas-demo p {
+  margin: 0;
+  color: #f3fdf3;
+  font-size: 0.95rem;
+}
+
+.alertas-card {
+  margin-top: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.alertas-info h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #2f5b22;
+  font-size: 1rem;
+}
+
+.alertas-info ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #444444;
+  font-size: 0.95rem;
+}
+
+.alertas-cta {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.alertas-cta p {
+  color: #444444;
+  margin: 0;
+}
+
+/* Reutiliza el estilo del botón existente */
+.alertas-cta .btn-mas-funciones {
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .alertas-card {
+    flex-direction: column;
+  }
+}

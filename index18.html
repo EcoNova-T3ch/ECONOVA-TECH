@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alertas personalizadas – EcoNova</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/assets/styles/style18.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index10.html">
+          <img
+            src="public/assets/images/Imagen_Logo_Sin-Fondo.png"
+            class="logo-img"
+            alt="Logo EcoNova"
+          />
+        </a>
+        <a href="index10.html"><span class="logo-text">ECONOVA</span></a>
+      </div>
+      <div class="header-title">
+        <h1>Configuración de alertas personalizadas</h1>
+        <span>HU_PyME_017</span>
+      </div>
+    </header>
+
+    <main class="alert-main">
+      <!-- Filtros de la vista -->
+      <section class="alert-filtros">
+        <div class="filtro-item">
+          <label>Recurso</label>
+          <select>
+            <option>Energía y agua</option>
+            <option>Solo energía</option>
+            <option>Solo agua</option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label>Área / línea</label>
+          <select>
+            <option>Todas las áreas</option>
+            <option>Línea de producción A</option>
+            <option>Línea de producción B</option>
+            <option>Oficinas administrativas</option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label>Estado</label>
+          <select>
+            <option>Todas</option>
+            <option>Activa</option>
+            <option>Desactivada</option>
+          </select>
+        </div>
+
+        <button class="btn-primario">Aplicar filtros</button>
+      </section>
+
+      <!-- Layout principal: lista + editor -->
+      <section class="alert-layout">
+        <!-- LISTA DE ALERTAS CONFIGURADAS -->
+        <div class="alert-lista">
+          <div class="alert-lista-header">
+            <div>
+              <h2>Alertas configuradas</h2>
+              <p>
+                Revisa y administra las alertas de consumo por recurso, área y
+                horario.
+              </p>
+            </div>
+            <span class="alert-lista-contador"> 4 alertas configuradas </span>
+          </div>
+
+          <!-- Alerta 1 -->
+          <article class="alert-card">
+            <div class="alert-card-top">
+              <div>
+                <h3>Alerta pico de energía turno noche</h3>
+                <div class="alert-tags">
+                  <span class="tag recurso-energia">Energía</span>
+                  <span class="tag area-produccion">Línea de producción A</span>
+                  <span class="tag estado-activa">Activa</span>
+                </div>
+              </div>
+              <span class="alert-nivel alert-nivel-alto">Crítico</span>
+            </div>
+
+            <div class="alert-detalle">
+              <div class="detalle-item">
+                <span class="detalle-label">Condición</span>
+                <span class="detalle-valor">
+                  Cuando el consumo supera el 100% del umbral
+                </span>
+              </div>
+              <div class="detalle-item">
+                <span class="detalle-label">Umbral</span>
+                <span class="detalle-valor">150 kWh / hora</span>
+              </div>
+              <div class="detalle-item">
+                <span class="detalle-label">Horario</span>
+                <span class="detalle-valor">L–S · 22:00 – 06:00</span>
+              </div>
+              <div class="detalle-item">
+                <span class="detalle-label">Canales</span>
+                <span class="detalle-valor">Panel de alertas, Correo</span>
+              </div>
+            </div>
+
+            <div class="alert-card-footer">
+              <span class="alert-descripcion">
+                Notifica al gerente y a jefatura de planta cuando el consumo en
+                el turno noche se dispara por encima del umbral definido.
+              </span>
+              <div class="alert-acciones">
+                <button class="btn-secundario">Editar</button>
+                <button class="btn-link">Desactivar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Alerta 2 -->
+          <article class="alert-card">
+            <div class="alert-card-top">
+              <div>
+                <h3>Alerta consumo de agua en oficinas</h3>
+                <div class="alert-tags">
+                  <span class="tag recurso-agua">Agua</span>
+                  <span class="tag area-oficinas"
+                    >Oficinas administrativas</span
+                  >
+                  <span class="tag estado-activa">Activa</span>
+                </div>
+              </div>
+              <span class="alert-nivel alert-nivel-medio">Moderado</span>
+            </div>
+
+            <div class="alert-detalle">
+              <div class="detalle-item">
+                <span class="detalle-label">Condición</span>
+                <span class="detalle-valor">
+                  Cuando el consumo diario se acerca al 90% del umbral
+                </span>
+              </div>
+              <div class="detalle-item">
+                <span class="detalle-label">Umbral</span>
+                <span class="detalle-valor">12 m³ / día</span>
+              </div>
+              <div class="detalle-item">
+                <span class="detalle-label">Horario</span>
+                <span class="detalle-valor">L–V · 08:00 – 18:00</span>
+              </div>
+              <div class="detalle-item">
+                <span class="detalle-label">Canales</span>
+                <span class="detalle-valor">Panel de alertas</span>
+              </div>
+            </div>
+
+            <div class="alert-card-footer">
+              <span class="alert-descripcion">
+                Permite anticipar consumos anómalos en oficinas y detectar fugas
+                o mal uso fuera de horarios de trabajo.
+              </span>
+              <div class="alert-acciones">
+                <button class="btn-secundario">Editar</button>
+                <button class="btn-link">Desactivar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Alerta 3 -->
+          <article class="alert-card">
+            <div class="alert-card-top">
+              <div>
+                <h3>Alerta semanal de consumo consolidado</h3>
+                <div class="alert-tags">
+                  <span class="tag recurso-mixto">Energía y agua</span>
+                  <span class="tag area-global">Toda la planta</span>
+                  <span class="tag estado-inactiva">Desactivada</span>
+                </div>
+              </div>
+              <span class="alert-nivel alert-nivel-bajo">Informativa</span>
+            </div>
+
+            <div class="alert-detalle">
+              <div class="detalle-item">
+                <span class="detalle-label">Condición</span>
+                <span class="detalle-valor">
+                  Enviar resumen aunque no se superen umbrales
+                </span>
+              </div>
+              <div class="detalle-item">
+                <span class="detalle-label">Umbral</span>
+                <span class="detalle-valor">—</span>
+              </div>
+              <div class="detalle-item">
+                <span class="detalle-label">Horario</span>
+                <span class="detalle-valor">Domingo · 18:00</span>
+              </div>
+              <div class="detalle-item">
+                <span class="detalle-label">Canales</span>
+                <span class="detalle-valor">Correo</span>
+              </div>
+            </div>
+
+            <div class="alert-card-footer">
+              <span class="alert-descripcion">
+                Resumen semanal para la gerencia con consumos y alertas de la
+                semana.
+              </span>
+              <div class="alert-acciones">
+                <button class="btn-secundario">Editar</button>
+                <button class="btn-link">Activar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- EDITOR / CREACIÓN DE ALERTA -->
+        <aside class="alert-editor">
+          <div class="editor-card">
+            <h2>Crear / editar alerta</h2>
+            <p>
+              Configura el recurso, área, umbral y horario para personalizar tus
+              alertas.
+            </p>
+
+            <form class="alert-form">
+              <div class="form-group">
+                <label for="nombre-alerta">Nombre de la alerta</label>
+                <input
+                  type="text"
+                  id="nombre-alerta"
+                  placeholder="Ej. Alerta pico de energía turno noche"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="recurso">Recurso</label>
+                  <select id="recurso">
+                    <option>Energía</option>
+                    <option>Agua</option>
+                    <option>Energía y agua</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="area">Área / línea</label>
+                  <select id="area">
+                    <option>Toda la planta</option>
+                    <option>Línea de producción A</option>
+                    <option>Línea de producción B</option>
+                    <option>Oficinas administrativas</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Condición de la alerta</label>
+                <div class="form-opciones">
+                  <label class="radio-op">
+                    <input type="radio" name="condicion" checked />
+                    <span>Cuando el consumo se acerca al umbral (ej. 90%)</span>
+                  </label>
+                  <label class="radio-op">
+                    <input type="radio" name="condicion" />
+                    <span>Cuando el consumo supera el umbral</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="valor-umbral">Valor de umbral</label>
+                  <input
+                    type="number"
+                    id="valor-umbral"
+                    placeholder="Ej. 150"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="unidad-umbral">Unidad</label>
+                  <select id="unidad-umbral">
+                    <option>kWh / hora</option>
+                    <option>kWh / día</option>
+                    <option>m³ / día</option>
+                    <option>S/ por día</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Horario y días</label>
+                <div class="form-opciones">
+                  <label class="radio-op">
+                    <input type="radio" name="horario" checked />
+                    <span>24/7</span>
+                  </label>
+                  <label class="radio-op">
+                    <input type="radio" name="horario" />
+                    <span>Horario laboral (L–V · 08:00–18:00)</span>
+                  </label>
+                  <label class="radio-op">
+                    <input type="radio" name="horario" />
+                    <span>Personalizado</span>
+                  </label>
+                </div>
+                <div class="dias-container">
+                  <span>Días:</span>
+                  <div class="dias-chips">
+                    <label><input type="checkbox" checked /> L</label>
+                    <label><input type="checkbox" checked /> M</label>
+                    <label><input type="checkbox" checked /> M</label>
+                    <label><input type="checkbox" checked /> J</label>
+                    <label><input type="checkbox" checked /> V</label>
+                    <label><input type="checkbox" /> S</label>
+                    <label><input type="checkbox" /> D</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Canales de notificación</label>
+                <div class="form-opciones">
+                  <label class="check-op">
+                    <input type="checkbox" checked />
+                    <span>Panel de alertas en EcoNova</span>
+                  </label>
+                  <label class="check-op">
+                    <input type="checkbox" checked />
+                    <span>Correo electrónico</span>
+                  </label>
+                  <label class="check-op">
+                    <input type="checkbox" disabled />
+                    <span>SMS (reservado para futuras versiones)</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="criticidad">Nivel de criticidad</label>
+                <select id="criticidad">
+                  <option>Crítico</option>
+                  <option>Alto</option>
+                  <option>Moderado</option>
+                  <option>Informativo</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="descripcion-alerta">Descripción (opcional)</label>
+                <textarea
+                  id="descripcion-alerta"
+                  rows="3"
+                  placeholder="Ej. Notificar cuando la línea A tenga picos de consumo durante el turno noche para coordinar con mantenimiento."
+                ></textarea>
+              </div>
+
+              <div class="form-buttons">
+                <button type="submit" class="btn-primario">
+                  Guardar alerta
+                </button>
+                <button type="button" class="btn-secundario">
+                  Limpiar formulario
+                </button>
+              </div>
+
+              <p class="nota-preview">
+                Vista previa: EcoNova te notificará cuando el consumo
+                configurado se acerque o supere el umbral en el horario y días
+                seleccionados.
+              </p>
+            </form>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Sección explicativa -->
+      <section class="alert-explicacion">
+        <h2>¿Cómo ayuda esta configuración al gerente?</h2>
+        <p>
+          Este módulo permite al gerente definir alertas específicas según el
+          consumo de recursos, las áreas críticas y los horarios de operación.
+          De esta forma puede reaccionar a tiempo cuando la empresa se acerque o
+          supere los umbrales definidos, evitando sobrecostos y riesgos
+          operativos.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 EcoNova. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
