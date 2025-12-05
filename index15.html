@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel financiero – EcoNova</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/assets/styles/style15.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index10.html">
+          <img
+            src="public/assets/images/Imagen_Logo_Sin-Fondo.png"
+            class="logo-img"
+            alt="Logo EcoNova"
+          />
+        </a>
+        <a href="index10.html"><span class="logo-text">ECONOVA</span></a>
+      </div>
+      <div class="header-title">
+        <h1>Panel financiero – Impacto económico</h1>
+        <span>HU_PyME_012</span>
+      </div>
+    </header>
+
+    <main class="panel-main">
+      <!-- Filtros -->
+      <section class="pf-filtros">
+        <div class="filtro-item filtro-fechas">
+          <label>Rango de fechas</label>
+          <div class="filtro-fechas-inputs">
+            <input type="date" />
+            <span>a</span>
+            <input type="date" />
+          </div>
+        </div>
+
+        <div class="filtro-item">
+          <label>Unidad de negocio</label>
+          <select>
+            <option>Todas las unidades</option>
+            <option>Planta Norte</option>
+            <option>Planta Sur</option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label>Recurso</label>
+          <select>
+            <option>Energía y agua</option>
+            <option>Solo energía</option>
+            <option>Solo agua</option>
+          </select>
+        </div>
+
+        <button class="btn-primario">Aplicar filtros</button>
+      </section>
+
+      <!-- KPIs principales -->
+      <section class="pf-kpis">
+        <article class="kpi-card">
+          <h3>Costo total del periodo</h3>
+          <p class="kpi-valor">S/ 125,800</p>
+          <p class="kpi-detalle">Incluye energía y agua • Últimos 12 meses</p>
+        </article>
+
+        <article class="kpi-card">
+          <h3>Ahorro estimado vs línea base</h3>
+          <p class="kpi-valor">S/ 32,450</p>
+          <p class="kpi-detalle">
+            -21% del costo comparado con el escenario sin EcoNova
+          </p>
+        </article>
+
+        <article class="kpi-card">
+          <h3>ROI acumulado del programa</h3>
+          <p class="kpi-valor">+145%</p>
+          <p class="kpi-detalle">Inversiones en eficiencia implementadas</p>
+        </article>
+
+        <article class="kpi-card">
+          <h3>Payback promedio</h3>
+          <p class="kpi-valor">1.8 años</p>
+          <p class="kpi-detalle">Promedio de todas las iniciativas activas</p>
+        </article>
+      </section>
+
+      <!-- Gráficos -->
+      <section class="pf-graficos">
+        <div class="grafico-card">
+          <div class="grafico-header">
+            <h3>Costo mensual vs ahorro generado</h3>
+            <span class="grafico-subtitulo">
+              Comparación línea base vs costo real
+            </span>
+          </div>
+          <div class="grafico-placeholder">
+            <!-- Aquí luego podrías integrar una librería de gráficos -->
+            <span>Gráfico de líneas (costo base vs costo real)</span>
+          </div>
+          <p class="grafico-nota">
+            Ahorro acumulado en el periodo: <strong>S/ 32,450</strong>.
+          </p>
+        </div>
+
+        <div class="grafico-card">
+          <div class="grafico-header">
+            <h3>Ahorro por iniciativa</h3>
+            <span class="grafico-subtitulo">
+              Ranking de iniciativas de mayor impacto económico
+            </span>
+          </div>
+          <div class="grafico-placeholder">
+            <span>Gráfico de barras horizontales por iniciativa</span>
+          </div>
+          <p class="grafico-nota">
+            Las tres iniciativas con mayor contribución explican el
+            <strong>68% del ahorro total</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tabla detalle -->
+      <section class="pf-tabla">
+        <header class="pf-tabla-header">
+          <h2>Detalle financiero por iniciativa</h2>
+          <div class="pf-tabla-filtros">
+            <label>
+              Estado
+              <select>
+                <option>Todos</option>
+                <option>Implementada</option>
+                <option>En ejecución</option>
+                <option>En evaluación</option>
+              </select>
+            </label>
+            <button class="btn-secundario">Exportar a PDF / XLSX</button>
+          </div>
+        </header>
+
+        <div class="tabla-contenedor">
+          <table>
+            <thead>
+              <tr>
+                <th>Iniciativa</th>
+                <th>Tipo</th>
+                <th>Inversión inicial (S/)</th>
+                <th>Ahorro mensual (S/)</th>
+                <th>Ahorro anual (S/)</th>
+                <th>ROI (%)</th>
+                <th>Payback</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Reemplazo de luminarias LED</td>
+                <td>Energía</td>
+                <td>40,000</td>
+                <td>6,500</td>
+                <td>78,000</td>
+                <td>95%</td>
+                <td>7.4 meses</td>
+                <td>Implementada</td>
+              </tr>
+              <tr>
+                <td>Optimización de horarios de producción</td>
+                <td>Energía</td>
+                <td>15,000</td>
+                <td>3,200</td>
+                <td>38,400</td>
+                <td>156%</td>
+                <td>4.7 meses</td>
+                <td>En ejecución</td>
+              </tr>
+              <tr>
+                <td>Control de fugas en red de agua</td>
+                <td>Agua</td>
+                <td>22,000</td>
+                <td>2,800</td>
+                <td>33,600</td>
+                <td>53%</td>
+                <td>7.8 meses</td>
+                <td>Implementada</td>
+              </tr>
+              <tr>
+                <td>Capacitación en uso eficiente de equipos</td>
+                <td>Mixta</td>
+                <td>8,000</td>
+                <td>900</td>
+                <td>10,800</td>
+                <td>35%</td>
+                <td>8.9 meses</td>
+                <td>En evaluación</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Resumen -->
+      <section class="pf-resumen">
+        <h2>Conclusiones del impacto económico</h2>
+        <p>
+          Con la información de este panel, el gerente puede identificar
+          rápidamente qué iniciativas generan mayor retorno económico, priorizar
+          nuevas inversiones en eficiencia y justificar los resultados frente a
+          la dirección.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 EcoNova. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

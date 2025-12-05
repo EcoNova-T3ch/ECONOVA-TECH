@@ -265,3 +265,143 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ===== Panel financiero – Impacto económico (HU_PyME_012) ===== */
+
+.panel-financiero-demo {
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.panel-financiero-demo h2 {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.panel-financiero-demo p {
+  margin: 0;
+  color: #f3fdf3;
+  font-size: 0.95rem;
+}
+
+.panel-financiero-card {
+  margin-top: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.panel-financiero-info h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #2f5b22;
+  font-size: 1rem;
+}
+
+.panel-financiero-info ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #444444;
+  font-size: 0.95rem;
+}
+
+.panel-financiero-cta {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.panel-financiero-cta p {
+  color: #444444;
+  margin: 0;
+}
+
+/* Usa el mismo estilo de tus otros botones */
+.panel-financiero-cta .btn-mas-funciones {
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .panel-financiero-card {
+    flex-direction: column;
+  }
+}
+
+/* ===== Recomendaciones inteligentes de eficiencia (HU_PyME_022) ===== */
+
+.recomendaciones-demo {
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.recomendaciones-demo h2 {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.recomendaciones-demo p {
+  margin: 0;
+  color: #f3fdf3;
+  font-size: 0.95rem;
+}
+
+.recomendaciones-card {
+  margin-top: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.recomendaciones-info h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #2f5b22;
+  font-size: 1rem;
+}
+
+.recomendaciones-info ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #444444;
+  font-size: 0.95rem;
+}
+
+.recomendaciones-cta {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.recomendaciones-cta p {
+  color: #444444;
+  margin: 0;
+}
+
+/* Reusa el estilo del botón existente */
+.recomendaciones-cta .btn-mas-funciones {
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .recomendaciones-card {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recomendaciones inteligentes – EcoNova</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/assets/styles/style16.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index10.html">
+          <img
+            src="public/assets/images/Imagen_Logo_Sin-Fondo.png"
+            class="logo-img"
+            alt="Logo EcoNova"
+          />
+        </a>
+        <a href="index10.html"><span class="logo-text">ECONOVA</span></a>
+      </div>
+      <div class="header-title">
+        <h1>Recomendaciones inteligentes de eficiencia</h1>
+        <span>HU_PyME_022</span>
+      </div>
+    </header>
+
+    <main class="rec-main">
+      <!-- Filtros principales -->
+      <section class="rec-filtros">
+        <div class="filtro-item">
+          <label>Unidad de negocio</label>
+          <select>
+            <option>Todas las unidades</option>
+            <option>Planta Norte</option>
+            <option>Planta Sur</option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label>Recurso</label>
+          <select>
+            <option>Energía y agua</option>
+            <option>Solo energía</option>
+            <option>Solo agua</option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label>Estado</label>
+          <select>
+            <option>Todas</option>
+            <option>Pendiente</option>
+            <option>En ejecución</option>
+            <option>Implementada</option>
+          </select>
+        </div>
+
+        <div class="filtro-item">
+          <label>Ordenar por</label>
+          <select>
+            <option>Prioridad (crítico primero)</option>
+            <option>Mayor ahorro económico</option>
+            <option>Menor inversión requerida</option>
+            <option>Mayor facilidad de implementación</option>
+          </select>
+        </div>
+
+        <button class="btn-primario">Aplicar filtros</button>
+      </section>
+
+      <!-- Layout principal: lista + resumen -->
+      <section class="rec-layout">
+        <!-- LISTA DE RECOMENDACIONES -->
+        <div class="rec-lista">
+          <div class="rec-lista-header">
+            <div>
+              <h2>Listado priorizado</h2>
+              <p>
+                Recomendaciones ordenadas según criticidad, impacto económico y
+                facilidad de implementación.
+              </p>
+            </div>
+            <span class="rec-lista-contador"
+              >6 recomendaciones encontradas</span
+            >
+          </div>
+
+          <!-- Card 1 -->
+          <article class="rec-card">
+            <div class="rec-card-header">
+              <div>
+                <h3>#1 Optimizar horarios de producción</h3>
+                <div class="rec-tags">
+                  <span class="tag recurso-energia">Energía</span>
+                  <span class="tag criticidad-critica">Crítico</span>
+                  <span class="tag estado-pendiente">Pendiente</span>
+                </div>
+              </div>
+              <span class="rec-prioridad-label">Prioridad 1</span>
+            </div>
+
+            <div class="rec-metricas">
+              <div class="metrica">
+                <span class="metrica-label">Ahorro estimado</span>
+                <span class="metrica-valor">S/ 6,800 / mes</span>
+              </div>
+              <div class="metrica">
+                <span class="metrica-label">Inversión requerida</span>
+                <span class="metrica-valor">S/ 10,000</span>
+              </div>
+              <div class="metrica">
+                <span class="metrica-label">Impacto en consumo</span>
+                <span class="metrica-valor">-18% energía</span>
+              </div>
+              <div class="metrica">
+                <span class="metrica-label">Facilidad de implementación</span>
+                <span class="metrica-valor">Media</span>
+              </div>
+            </div>
+
+            <p class="rec-descripcion">
+              Ajustar los horarios de arranque y parada de equipos para evitar
+              picos de demanda en horas punta, coordinando con planificación de
+              producción.
+            </p>
+
+            <div class="rec-card-footer">
+              <span class="rec-sugerencia">
+                Sugerencia: Coordinar con jefatura de planta y área de
+                mantenimiento para definir nuevo calendario semanal.
+              </span>
+              <button class="btn-secundario">Ver detalle</button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="rec-card">
+            <div class="rec-card-header">
+              <div>
+                <h3>#2 Reemplazo progresivo de luminarias por LED</h3>
+                <div class="rec-tags">
+                  <span class="tag recurso-energia">Energía</span>
+                  <span class="tag criticidad-alta">Alto impacto</span>
+                  <span class="tag estado-ejecucion">En ejecución</span>
+                </div>
+              </div>
+              <span class="rec-prioridad-label">Prioridad 2</span>
+            </div>
+
+            <div class="rec-metricas">
+              <div class="metrica">
+                <span class="metrica-label">Ahorro estimado</span>
+                <span class="metrica-valor">S/ 4,200 / mes</span>
+              </div>
+              <div class="metrica">
+                <span class="metrica-label">Inversión requerida</span>
+                <span class="metrica-valor">S/ 35,000</span>
+              </div>
+              <div class="metrica">
+                <span class="metrica-label">Impacto en consumo</span>
+                <span class="metrica-valor">-25% iluminación</span>
+              </div>
+              <div class="metrica">
+                <span class="metrica-label">Facilidad de implementación</span>
+                <span class="metrica-valor">Alta</span>
+              </div>
+            </div>
+
+            <p class="rec-descripcion">
+              Sustituir luminarias tradicionales por tecnología LED en áreas de
+              mayor uso, iniciando por zonas de producción continua.
+            </p>
+
+            <div class="rec-card-footer">
+              <span class="rec-sugerencia">
+                Sugerencia: Priorizar pasillos y almacenes con uso 24/7 para
+                maximizar el ahorro.
+              </span>
+              <button class="btn-secundario">Ver detalle</button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="rec-card">
+            <div class="rec-card-header">
+              <div>
+                <h3>#3 Programa de detección de fugas de agua</h3>
+                <div class="rec-tags">
+                  <span class="tag recurso-agua">Agua</span>
+                  <span class="tag criticidad-critica">Crítico</span>
+                  <span class="tag estado-pendiente">Pendiente</span>
+                </div>
+              </div>
+              <span class="rec-prioridad-label">Prioridad 3</span>
+            </div>
+
+            <div class="rec-metricas">
+              <div class="metrica">
+                <span class="metrica-label">Ahorro estimado</span>
+                <span class="metrica-valor">S/ 2,300 / mes</span>
+              </div>
+              <div class="metrica">
+                <span class="metrica-label">Inversión requerida</span>
+                <span class="metrica-valor">S/ 8,000</span>
+              </div>
+              <div class="metrica">
+                <span class="metrica-label">Impacto en consumo</span>
+                <span class="metrica-valor">-15% agua</span>
+              </div>
+              <div class="metrica">
+                <span class="metrica-label">Facilidad de implementación</span>
+                <span class="metrica-valor">Media</span>
+              </div>
+            </div>
+
+            <p class="rec-descripcion">
+              Implementar inspecciones semanales en líneas de agua y registros
+              de consumo para identificar fugas tempranamente.
+            </p>
+
+            <div class="rec-card-footer">
+              <span class="rec-sugerencia">
+                Sugerencia: Asignar responsables por sector y registrar
+                hallazgos en EcoNova.
+              </span>
+              <button class="btn-secundario">Ver detalle</button>
+            </div>
+          </article>
+
+          <!-- Podrías agregar más cards similares (#4, #5, #6) si lo deseas -->
+        </div>
+
+        <!-- RESUMEN / PRIORIDADES -->
+        <aside class="rec-resumen">
+          <div class="resumen-card">
+            <h2>Resumen de prioridades</h2>
+
+            <div class="resumen-kpis">
+              <div class="resumen-kpi">
+                <span class="resumen-kpi-label">Recomendaciones totales</span>
+                <span class="resumen-kpi-valor">6</span>
+              </div>
+              <div class="resumen-kpi">
+                <span class="resumen-kpi-label">Críticas</span>
+                <span class="resumen-kpi-valor criticidad-critica-text">2</span>
+              </div>
+              <div class="resumen-kpi">
+                <span class="resumen-kpi-label">Alto impacto</span>
+                <span class="resumen-kpi-valor criticidad-alta-text">2</span>
+              </div>
+              <div class="resumen-kpi">
+                <span class="resumen-kpi-label">Medio / Bajo impacto</span>
+                <span class="resumen-kpi-valor">2</span>
+              </div>
+            </div>
+
+            <div class="resumen-legenda">
+              <p><strong>Criticidad:</strong></p>
+              <ul>
+                <li>
+                  <span class="dot criticidad-critica"></span> Crítico –
+                  requiere acción inmediata.
+                </li>
+                <li>
+                  <span class="dot criticidad-alta"></span> Alto – planificar en
+                  corto plazo.
+                </li>
+                <li>
+                  <span class="dot criticidad-media"></span> Medio – ejecutar
+                  según disponibilidad.
+                </li>
+              </ul>
+            </div>
+
+            <p class="resumen-nota">
+              EcoNova prioriza primero las recomendaciones con mayor ahorro
+              económico y criticidad, considerando también la facilidad de
+              implementación.
+            </p>
+          </div>
+
+          <div class="resumen-card secundario">
+            <h3>Impacto potencial mensual</h3>
+            <p class="impacto-valor">S/ 13,300</p>
+            <p class="impacto-detalle">
+              Ahorro estimado si se ejecutan las 3 recomendaciones de mayor
+              prioridad.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Sección final de contexto -->
+      <section class="rec-explicacion">
+        <h2>¿Cómo ayuda este módulo al gerente?</h2>
+        <p>
+          Este panel permite al gerente identificar qué acciones ejecutar
+          primero, basándose en el impacto económico, el consumo de recursos y
+          la facilidad de implementación. Así se puede construir un plan de
+          eficiencia ordenado y justificable frente a la dirección.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 EcoNova. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
