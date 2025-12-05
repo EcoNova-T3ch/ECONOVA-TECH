@@ -3,95 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ECONOVA - Reporte de Cumplimiento</title>
-    <link
-      rel="stylesheet"
-      href="public/assets/styles/reporte_cumplimiento.css"
-    />
-  </head>
+    <title>Productos - EcoNova</title>
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="public/assets/styles/styles7.css" />
+
+    <link rel="stylesheet" href="public/assets/styles/styles_productos.css" />
+  </head>
   <body>
     <nav class="topheader">
-      <a href="index.html" class="Logo">
+      <a href="index7.html" class="Logo">
         <img
           src="public/assets/images/Imagen_Logo_Sin-Fondo.png"
-          alt="Logo Econova"
+          alt="Logo EcoNova"
         />
         <span class="Logo-Texto">ECONOVA</span>
       </a>
-
       <ul class="Menu-Horizontal">
-        <li><a href="index.html">Inicio</a></li>
         <li>
-          <a href="reporte-cumplimiento.html">Reportes</a>
+          </a>
         </li>
-        <li><a href="">Cumplimientos</a></li>
-        <li><a href="">Contacto</a></li>
       </ul>
     </nav>
 
-    <main class="reporte-wrapper">
-      <section class="reporte-card">
-        <h1>Generar Reporte de Cumplimiento Ambiental</h1>
+    <main class="productos-main container">
+      <!-- HERO / INTRO -->
+      <section class="productos-hero">
+        <h1>Nuestros productos y módulos</h1>
+        <p>
+          EcoNova se adapta al tamaño de tu PyME. Elige el paquete que mejor se
+          ajuste a tu realidad y combina módulos de monitoreo, producción y
+          finanzas en una sola plataforma.
+        </p>
+      </section>
 
-        <div class="reporte-layout">
-          <div class="reporte-form-column">
-            <div class="field-group">
-              <label class="field-label">Rango de fechas</label>
-              <div class="date-range">
-                <div class="field-control">
-                  <input type="text" placeholder="Desde" class="input-text" />
-                  <span class="icon-calendar">📅</span>
-                </div>
-                <div class="field-control">
-                  <input type="text" placeholder="Hasta" class="input-text" />
-                  <span class="icon-calendar">📅</span>
-                </div>
-              </div>
-            </div>
+      <!-- PLANES / PAQUETES -->
+      <section class="planes-section">
+        <h2>Paquetes para PyMEs</h2>
+        <div class="planes-grid">
+          <!-- Plan 1 -->
+          <article class="plan-card">
+            <h3>Essentials</h3>
+            <p class="plan-subtitle">
+              Ideal para PyMEs que recién empiezan a medir su consumo.
+            </p>
+            <ul class="plan-list">
+              <li>Monitoreo básico de energía y agua</li>
+              <li>Panel diario de consumo</li>
+              <li>Exportación simple a Excel</li>
+              <li>1 sede / planta</li>
+            </ul>
+            <button class="btn-plan">Ver demo de Essentials</button>
+          </article>
 
-            <!-- Tipo de reporte -->
-            <div class="field-group">
-              <label class="field-label">Tipo de reporte</label>
-              <div class="select-wrapper">
-                <select class="select-report">
-                  <option>PDF</option>
-                  <option>Excel</option>
-                  <option>CSV</option>
-                </select>
-                <span class="icon-chevron">▾</span>
-              </div>
-            </div>
+          <!-- Plan 2 -->
+          <article class="plan-card plan-destacado">
+            <div class="badge">Más elegido</div>
+            <h3>Growth</h3>
+            <p class="plan-subtitle">
+              Para empresas en crecimiento que buscan ahorrar y controlar
+              desviaciones.
+            </p>
+            <ul class="plan-list">
+              <li>Alertas por umbral y tickets de incidencias</li>
+              <li>Cierre de turno automatizado</li>
+              <li>Reportes ejecutivos 1-página (PDF)</li>
+              <li>Panel financiero con ROI y payback</li>
+            </ul>
+            <button class="btn-plan">Ver demo de Growth</button>
+          </article>
 
-            <button class="btn-generar">Generar</button>
-          </div>
-
-          <div class="reporte-preview-column">
-            <div class="preview-card">
-              <div class="chart-area">
-                <div class="chart-bars">
-                  <div class="bar bar-energy"></div>
-                  <div class="bar bar-water"></div>
-                </div>
-                <div class="chart-labels">
-                  <span>Energía</span>
-                  <span>Agua</span>
-                </div>
-              </div>
-
-              <div class="preview-info">
-                <div class="indicators">
-                  <p><strong>Indicadores</strong></p>
-                  <p>Energía &nbsp;&nbsp; 150 kWh</p>
-                  <p>Agua &nbsp;&nbsp; 120 m³</p>
-                </div>
-
-                <button class="btn-descargar">Descargar PDF</button>
-              </div>
-            </div>
-          </div>
+          <!-- Plan 3 -->
+          <article class="plan-card">
+            <h3>Enterprise</h3>
+            <p class="plan-subtitle">
+              Para operaciones multi-planta con enfoque en estrategia y
+              sostenibilidad.
+            </p>
+            <ul class="plan-list">
+              <li>Comparativa entre plantas y ranking interno</li>
+              <li>Recomendaciones inteligentes de eficiencia</li>
+              <li>Reportes financieros y sectoriales avanzados</li>
+              <li>Soporte prioritario y configuración a medida</li>
+            </ul>
+            <button class="btn-plan">Hablar con un asesor</button>
+          </article>
         </div>
       </section>
+
+      <!-- MÓDULOS DE LA PLATAFORMA -->
+      <section class="modulos-section">
+        <h2>Módulos de la plataforma EcoNova</h2>
+        <p class="modulos-intro">
+          Puedes activar los módulos según las necesidades de tu empresa. Estos
+          son algunos de los principales:
+        </p>
+
+        <div class="modulos-grid">
+          <article class="modulo-card">
+            <h3>Monitoreo de consumo</h3>
+            <p>
+              Visualiza el consumo de energía y agua por línea, turno o planta,
+              con indicadores en tiempo casi real.
+            </p>
+            <ul>
+              <li>Gráficos de consumo diario y mensual</li>
+              <li>Semáforos de desviación frente al presupuesto</li>
+            </ul>
+          </article>
+
+          <article class="modulo-card">
+            <h3>Cierre de turno y alertas</h3>
+            <p>
+              Consolida consumos, mermas e incidencias al final de cada turno y
+              genera reportes auditables.
+            </p>
+            <ul>
+              <li>Botón “Cerrar turno” con validaciones</li>
+              <li>Tickets por alertas de sobreconsumo</li>
+            </ul>
+          </article>
+
+          <article class="modulo-card">
+            <h3>Reportes y panel ejecutivo</h3>
+            <p>
+              Resume en una página el ahorro, las metas y los riesgos para
+              presentar a gerencia o clientes.
+            </p>
+            <ul>
+              <li>Reporte ejecutivo 1-página en PDF</li>
+              <li>Panel financiero con ROI y payback</li>
+            </ul>
+          </article>
+
+          <article class="modulo-card">
+            <h3>Funciones avanzadas</h3>
+            <p>
+              Explora escenarios de ahorro, benchmarking con el sector y
+              recomendaciones inteligentes.
+            </p>
+            <ul>
+              <li>Simulador “what-if” de ahorro</li>
+              <li>Ranking de áreas más eficientes</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="cta-productos">
+        <h2>¿No sabes qué paquete elegir?</h2>
+        <p>
+          Podemos ayudarte a definir el plan ideal según tu consumo actual y tus
+          metas de ahorro.
+        </p>
+        <a href="index10.html" class="btn-cta-productos">Ver demo actual →</a>
+      </section>
     </main>
+
+    <footer class="main-footer">
+      <div class="footer-copy">
+        <p>© 2025 EcoNova. Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -75,11 +75,9 @@ body {
 }
 
 .empty-actions {
-  /* Espacio reservado si no hay botones de Login/Signup en esta vista */
   width: 80px;
 }
 
-/* --- MAIN CONTENT: ACHIEVEMENT DOWNLOADED VIEW --- */
 .achievement-main-content {
   display: flex;
   justify-content: center;
